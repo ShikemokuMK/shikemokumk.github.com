@@ -1,0 +1,241 @@
+/* 
+	● glink.css
+	
+	このファイルを[loadcss]タグによって読み込むことで、それ以降、
+	[glink]タグのcolorパラメータに次の値を指定することができるようになります。
+	
+		･my-simple
+		･my-orange
+		･my-red
+		･my-blue
+		･my-text
+		･my-image
+		･my-anim
+		･my-kanim
+
+*/
+
+/* black (参考用。もとのコードをそのままコピーしています。)
+---------------------------------------------- */
+.black {
+	color: #d7d7d7;
+	border: solid 1px #333;
+	background: #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
+	background: -moz-linear-gradient(top,  #666,  #000);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000');
+}
+	.black:hover {
+		background: #000;
+		background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#000));
+		background: -moz-linear-gradient(top,  #444,  #000);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000');
+	}
+	.black:active {
+		color: #666;
+		background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#444));
+		background: -moz-linear-gradient(top,  #000,  #444);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#666666');
+	}
+
+/* my-simple
+---------------------------------------------- */
+.my-simple {
+	box-sizing   : border-box;
+	text-align   :     center;
+	position     :   absolute;
+    border-radius:          0;
+    padding      :          0;
+    text-shadow  :    initial;
+    box-shadow   :    initial;
+    color        :    #FFFFFF;
+    background   :    #000000;
+}
+	.my-simple:hover {
+	    color     :    #FFFFFF;
+	    background:    #666666;
+	}
+	.my-simple:active {
+	    color     :    #000000;
+	    background:    #FFFFFF;
+	}
+
+/* my-blue
+---------------------------------------------- */
+.my-blue {
+	box-sizing   : border-box;
+	text-align   :     center;
+	position     :   absolute;
+    width        :      500px;
+    height       :       60px;
+    border-radius:       30px;
+    padding      :  12px 30px;
+    font-weight  :       bold;
+    text-shadow  :    initial;
+    box-shadow   :    initial;
+    color        :    #FFFFFF;
+    background   :    #0080FF;
+}
+	.my-blue:hover {
+	    color     :   #0080FF;
+	    background:   #FFFFFF;
+	}
+	.my-blue:active {
+	    color     :             #0080FF;
+	    background:             #FFFFFF;
+	    transform : translate(1px, 1px);
+	}
+
+/* my-orange
+---------------------------------------------- */
+.my-orange {
+	box-sizing   : border-box;
+	text-align   :     center;
+	position     :   absolute;
+    width        :      500px;
+    height       :       60px;
+    border-radius:       30px;
+    padding      :  12px 30px;
+    font-weight  :       bold;
+    text-shadow  :    initial;
+    box-shadow   :    initial;
+    color        :    #FFFFFF;
+    background   :    #F0771E;
+}
+	.my-orange:hover {
+	    color     :   #F0771E;
+	    background:   #FFFFFF;
+	}
+	.my-orange:active {
+	    color     :             #F0771E;
+	    background:             #FFFFFF;
+	    transform : translate(1px, 1px);
+	}
+
+/* my-red
+---------------------------------------------- */
+.my-red {
+	box-sizing   : border-box;
+	text-align   :     center;
+	position     :   absolute;
+    width        :      500px;
+    height       :       60px;
+    border-radius:       30px;
+    padding      :  12px 30px;
+    font-weight  :       bold;
+    text-shadow  :    initial;
+    box-shadow   :    initial;
+    color        :    #FFFFFF;
+    background   :    #F045A6;
+}
+	.my-red:hover {
+	    color     :   #F045A6;
+	    background:   #FFFFFF;
+	}
+	.my-red:active {
+	    color     :             #F045A6;
+	    background:             #FFFFFF;
+	    transform : translate(1px, 1px);
+	}
+
+/* my-text
+---------------------------------------------- */
+.my-text {
+	box-sizing   : border-box;
+	text-align   :     center;
+	position     :   absolute;
+    width        :      500px;
+    height       :       60px;
+    border-radius:       30px;
+    padding      :  12px 30px;
+    font-weight  :       bold;
+    text-shadow  :    initial;
+    box-shadow   :    initial;
+    color        :    #FFFFFF;
+    background   :       none;
+}
+	.my-text:hover,
+	.my-text:active {
+    	text-shadow    : 0 0 5px #FFFFFF;
+		text-decoration:       underline;
+	}
+
+/* my-image
+---------------------------------------------- */
+.my-image {
+	box-sizing   : border-box;
+	text-align   :     center;
+	position     :   absolute;
+    width        :      500px;
+    height       :       60px;
+    border-radius:       30px;
+    padding      :  12px 30px;
+    font-weight  :       bold;
+    text-shadow  :    initial;
+    box-shadow   :    initial;
+    color        :    #FFFFFF;
+    background   : url('glink.png');
+    opacity      :              0.8;
+}
+	.my-image:hover,
+	.my-image:active {
+ 	   opacity: 1;
+	}
+	
+/* my-anim
+---------------------------------------------- */
+.my-anim {
+	box-sizing   : border-box;
+	text-align   :     center;
+	position     :   absolute;
+    width        :      500px;
+    height       :       60px;
+    border-radius:       30px;
+    padding      :  12px 30px;
+    font-weight  :       bold;
+    text-shadow  :    initial;
+    box-shadow   :    initial;
+    color        :    #FFFFFF;
+    background   :    #113355;
+    transition   :  all 300ms;
+}
+	.my-anim:hover {
+		transform : translateX(20px);
+		background:          #1E66A6;
+	}
+	.my-anim:active {
+		transition:          all 0ms;
+		transform : translateX(20px);
+	    color     :          #1E66A6;
+	    background:          #FFFFFF;
+	}
+	
+/* my-kanim
+---------------------------------------------- */
+.my-kanim {
+	box-sizing   : border-box;
+	text-align   :     center;
+	position     :   absolute;
+    width        :      500px;
+    height       :       60px;
+    border-radius:       30px;
+    padding      :  12px 30px;
+    font-weight  :       bold;
+    text-shadow  :    initial;
+    box-shadow   :    initial;
+    color        :    #FFFFFF;
+    background   :    #113355;
+}
+	.my-kanim:hover,
+	.my-kanim:active {
+		animation        : ugougo 0.4s ease-in-out infinite alternate;
+		-webkit-animation: ugougo 0.4s ease-in-out infinite alternate;
+	}
+	@keyframes ugougo {
+		0%   {transform: scale(1.0);}
+		100% {transform: scale(1.1);}
+	}
+	@-webkit-keyframes ugougo {
+		0%   {transform: scale(1.0);}
+		100% {transform: scale(1.1);}
+	}
